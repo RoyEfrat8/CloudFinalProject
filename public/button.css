@@ -1,0 +1,30 @@
+/* button.css */
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: darkblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .button:active {
+    background-color: #d4d4d4;
+  }
+  

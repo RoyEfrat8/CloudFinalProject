@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="checkbox.css" rel="stylesheet" />
+    <link href="input.css" rel="stylesheet" />
+    <link href="peopleform.css" rel="stylesheet" />
+    <link href="button.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Patient</h1>
+    <form action="/save" method="POST" enctype="multipart/form-data">
+        <label>ID:</label>
+        <input type="text" name="id" class="inputfield"/>
+        <label>First Name:</label>
+        <input type="text" name="firstname" class="inputfield"/>
+        <label>Last Name:</label>
+        <input type="text" name="lastname" class="inputfield"/>
+        <label>Date Of Birth:</label>
+        <input type="date" name="dob" class="inputfield"/>
+        <label>Photo:</label>
+        <input type="file" name="photo" class="inputfield"/><br/>
+        <td class="stuff" dir="rtl" id="condlist">
+            <ul style="list-style-type: none;margin:0%">
+                <li>
+                    <div class="checkbox-wrapper-1">
+                        <input id="condition1" name="condition1" value="Heartfailure" class="substituted" type="checkbox" aria-hidden="true" />
+                        <label for="condition1">Heartfailure</label>
+                    </div>
+                </li>                      
+                <li>
+                    <div class="checkbox-wrapper-1">
+                        <input id="condition2" name="condition2" value="Chronic renal failure" class="substituted" type="checkbox" aria-hidden="true" />
+                        <label for="condition2">Chronic renal failure</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper-1">
+                        <input id="condition3" name="condition3" value="Diabetes" class="substituted" type="checkbox" aria-hidden="true" />
+                        <label for="condition3">Diabetes</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper-1">
+                        <input id="condition4" name="condition4" value="Chronic hepatitis" class="substituted" type="checkbox" aria-hidden="true" />
+                        <label for="condition4">Chronic hepatitis</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper-1">
+                        <input id="condition5" name="condition5" value="Metabolic syndrome" class="substituted" type="checkbox" aria-hidden="true" />
+                        <label for="condition5">Metabolic syndrome</label>
+                    </div>
+                </li>
+            </ol>
+        </td>
+        <br/>
+        <input type="submit" class="button"/>
+    </form>
+</body>
+</html>

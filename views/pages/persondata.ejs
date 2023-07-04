@@ -1,0 +1,67 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* CSS styles */
+        * {
+            background-color: azure;
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+          margin-top: 3vh;
+            border-collapse: collapse;
+            width: 100%;
+            border-color: darkblue;
+            border-width: 2px;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+            background-color: white;
+
+        }
+
+        th {
+            background-color:ghostwhite;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <% people.forEach(function(person) { %>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Condition 1</th>
+            <th>Condition 2</th>
+            <th>Condition 3</th>
+            <th>Condition 4</th>
+            <th>Condition 5</th>
+        </tr>
+        <tr>
+            <td><%= person.id %></td>
+            <td><%= person.firstname %></td>
+            <td><%= person.lastname %></td>
+            <td><%= person.dob %></td>
+            <td><%= person.condition1 %></td>
+            <td><%= person.condition2 %></td>
+            <td><%= person.condition3 %></td>
+            <td><%= person.condition4 %></td>
+            <td><%= person.condition5 %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
